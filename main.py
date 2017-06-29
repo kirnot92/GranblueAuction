@@ -1,10 +1,11 @@
 import re
 import requests
+import YahooAuctionKeyStore
 from xml.etree import ElementTree as XML
 
 
 url = 'https://auctions.yahooapis.jp/AuctionWebService/V2/sellingList?'
-key = '&appid=dj0zaiZpPUJVVHpPWnlUc25rNyZzPWNvbnN1bWVyc2VjcmV0Jng9NWE-'
+key = YahooAuctionKeyStore.key
 seller_id = '&sellerID='
 
 class _seller:
